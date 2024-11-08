@@ -1,5 +1,5 @@
-import { fetchImages } from './pixabay-api';
-import { renderGallery } from './render-functions';
+import { fetchImages } from './js/pixabay-api';
+import { renderGallery } from './js/render-functions';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import iziToast from 'izitoast';
@@ -7,8 +7,8 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 const searchForm = document.querySelector('#search-form');
 const gallery = document.querySelector('.gallery');
-const loadMoreButton = document.querySelector('.load-more'); // Кнопка "Load more"
-const loader = document.querySelector('.loader'); // Ваш лоадер
+const loadMoreButton = document.querySelector('.load-more');
+const loader = document.querySelector('.loader');
 
 let lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
