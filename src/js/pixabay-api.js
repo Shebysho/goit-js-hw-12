@@ -19,6 +19,6 @@ export async function fetchImages(query, page) {
     return response.data;
   } catch (error) {
     console.error('Помилка при отриманні зображень:', error);
-    throw error; 
+    throw error;
   }
 }
